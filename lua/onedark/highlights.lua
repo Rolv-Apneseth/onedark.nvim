@@ -43,7 +43,7 @@ hl.common = {
     CursorColumn = {bg = c.bg1},
     CursorLine = {bg = c.bg1},
     ColorColumn = {bg = c.bg1},
-    CursorLineNr = {fg = c.bg1},
+    CursorLineNr = {fg = c.fg},
     LineNr = {fg = c.grey},
     Conceal = {fg = c.grey, bg = c.bg1},
     DiffAdd = {fg = c.none, bg = c.diff_add},
