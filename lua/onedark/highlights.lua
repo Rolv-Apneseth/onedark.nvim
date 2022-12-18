@@ -342,21 +342,21 @@ hl.plugins.fidget = {
 }
 
 hl.plugins.notify = {
-    NotifyERRORBorder= {fg=c.fg, bg=c.none},
-    NotifyWARNBorder= {fg=c.fg, bg=c.none},
-    NotifyINFOBorder= {fg=c.fg, bg=c.none},
-    NotifyDEBUGBorder= {fg=c.fg, bg=c.none},
-    NotifyTRACEBorder= {fg=c.fg, bg=c.none},
-    NotifyERRORIcon= {fg=c.dark_red, bg=c.none},
-    NotifyWARNIcon= {fg=c.dark_yellow, bg=c.none},
-    NotifyINFOIcon= {fg=c.purple, bg=c.none},
-    NotifyDEBUGIcon= {fg=c.purple, bg=c.none},
-    NotifyTRACEIcon= {fg=c.purple, bg=c.none},
-    NotifyERRORTitle= {fg=c.dark_red, bg=c.none, fmt="bold"},
-    NotifyWARNTitle= {fg=c.dark_yellow, bg=c.none, fmt="bold"},
-    NotifyINFOTitle= {fg=c.purple, bg=c.none, fmt="bold"},
-    NotifyDEBUGTitle= {fg=c.purple, bg=c.none, fmt="bold"},
-    NotifyTRACETitle= {fg=c.purple, bg=c.none, fmt="bold"},
+    NotifyERRORBorder = { fg = c.fg, bg = c.none },
+    NotifyWARNBorder = { fg = c.fg, bg = c.none },
+    NotifyINFOBorder = { fg = c.fg, bg = c.none },
+    NotifyDEBUGBorder = { fg = c.fg, bg = c.none },
+    NotifyTRACEBorder = { fg = c.fg, bg = c.none },
+    NotifyERRORIcon = { fg = c.dark_red, bg = c.none },
+    NotifyWARNIcon = { fg = c.dark_yellow, bg = c.none },
+    NotifyINFOIcon = { fg = c.purple, bg = c.none },
+    NotifyDEBUGIcon = { fg = c.purple, bg = c.none },
+    NotifyTRACEIcon = { fg = c.purple, bg = c.none },
+    NotifyERRORTitle = { fg = c.dark_red, bg = c.none, fmt = "bold" },
+    NotifyWARNTitle = { fg = c.dark_yellow, bg = c.none, fmt = "bold" },
+    NotifyINFOTitle = { fg = c.purple, bg = c.none, fmt = "bold" },
+    NotifyDEBUGTitle = { fg = c.purple, bg = c.none, fmt = "bold" },
+    NotifyTRACETitle = { fg = c.purple, bg = c.none, fmt = "bold" },
 }
 
 -- comment
@@ -518,6 +518,11 @@ hl.plugins.mini = {
     MiniTestPass = { fg = c.green, fmt = "bold" },
 
     MiniTrailspace = { bg = c.red },
+}
+
+hl.plugins.leap = {
+    LeapBackDrop = { fg = c.grey, fmt = cfg.code_style.comments },
+    LeapMatch = { fg = c.fg, bold = true, nocombine = true },
 }
 
 hl.langs.c = {
