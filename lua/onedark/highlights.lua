@@ -525,6 +525,16 @@ hl.plugins.leap = {
     LeapMatch = { fg = c.fg, bold = true, nocombine = true },
 }
 
+hl.plugins.rainbow_delimiter = {
+    RainbowDelimiterBlue = { fg = c.blue },
+    RainbowDelimiterOrange = { fg = c.orange },
+    RainbowDelimiterViolet = { fg = c.purple },
+    RainbowDelimiterYellow = { fg = c.yellow },
+    RainbowDelimiterCyan = { fg = c.cyan },
+    RainbowDelimiterRed = { fg = c.red },
+    RainbowDelimiterGreen = { fg = c.green },
+}
+
 hl.langs.c = {
     cInclude = colors.Blue,
     cStorageClass = colors.Purple,
