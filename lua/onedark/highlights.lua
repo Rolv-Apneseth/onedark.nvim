@@ -264,6 +264,7 @@ hl.plugins.lsp = {
 
     LspCodeLens = { fg = c.grey, fmt = cfg.code_style.comments },
     LspCodeLensSeparator = { fg = c.grey },
+    LspInlayHint = { fg = c.grey, fmt = cfg.code_style.comments },
 }
 
 hl.plugins.lsp.LspDiagnosticsDefaultError = hl.plugins.lsp.DiagnosticError
