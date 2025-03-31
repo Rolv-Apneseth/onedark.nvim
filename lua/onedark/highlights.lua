@@ -88,7 +88,7 @@ hl.common = {
     StatusLineNC = { fg = c.grey, bg = c.bg1 },
     StatusLineTermNC = { fg = c.grey, bg = c.bg1 },
     TabLine = { fg = c.fg, bg = c.bg1 },
-    TabLineFill = { fg = c.grey, bg = c.bg1 },
+    TabLineFill = { fg = c.fg, bg = c.none },
     TabLineSel = { fg = c.bg0, bg = c.fg },
     VertSplit = { fg = c.bg3 },
     Visual = { bg = c.bg3 },
