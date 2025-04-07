@@ -73,11 +73,6 @@ hl.common = {
     NonText = { fg = c.grey },
     Whitespace = { fg = c.grey },
     SpecialKey = { fg = c.grey },
-    Pmenu = { fg = c.fg, bg = c.bg1 },
-    PmenuSbar = { fg = c.none, bg = c.bg1 },
-    PmenuSel = { fg = c.bg0, bg = c.bg_blue },
-    WildMenu = { fg = c.bg0, bg = c.blue },
-    PmenuThumb = { fg = c.none, bg = c.grey },
     Question = { fg = c.yellow },
     SpellBad = { fg = c.red, fmt = "underline", sp = c.red },
     SpellCap = { fg = c.yellow, fmt = "underline", sp = c.yellow },
@@ -98,8 +93,15 @@ hl.common = {
     debugPC = { fg = c.bg0, bg = c.green },
     debugBreakpoint = { fg = c.bg0, bg = c.red },
     ToolbarButton = { fg = c.bg0, bg = c.bg_blue },
-    FloatBorder = { fg = c.grey, bg = c.bg1 },
-    NormalFloat = { fg = c.fg, bg = c.bg1 },
+    FloatBorder = { fg = c.grey, bg = cfg.transparent and c.none or c.bg1 },
+    NormalFloat = { fg = c.fg, bg = cfg.transparent and c.none or c.bg1 },
+    Pmenu = { fg = c.fg, bg = cfg.transparent and c.none or c.bg1 },
+    PmenuSbar = { fg = c.none, bg = cfg.transparent and c.none or c.bg1 },
+    PmenuSel = { bg = c.bg0 },
+    PmenuExtra = { fg = c.light_grey },
+    PmenuThumb = { fg = c.none, bg = c.grey },
+    PmenuKind = { fg = c.purple },
+    WildMenu = { fg = c.bg0, bg = c.blue },
 }
 
 hl.syntax = {
@@ -301,6 +303,10 @@ hl.plugins.cmp = {
     CmpItemAbbrMatchFuzzy = { fg = c.blue, fmt = "underline" },
     CmpItemMenu = colors.LightGrey,
     CmpItemKind = { fg = c.purple, fmt = cfg.cmp_itemkind_reverse and "reverse" },
+}
+
+hl.plugins.blink_cmp = {
+    BlinkCmpMenuBorder = hl.common.FloatBorder,
 }
 
 hl.plugins.coc = {
