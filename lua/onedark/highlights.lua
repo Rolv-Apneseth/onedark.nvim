@@ -217,26 +217,22 @@ hl.plugins.lsp = {
     DiagnosticWarn = { fg = c.yellow },
 
     DiagnosticVirtualTextError = {
-        bg = cfg.diagnostics.background
-                and util.darken(diagnostics_error_color, 0.1, c.bg0)
+        bg = cfg.diagnostics.background and util.darken(diagnostics_error_color, 0.1, c.bg0)
             or c.none,
         fg = diagnostics_error_color,
     },
     DiagnosticVirtualTextWarn = {
-        bg = cfg.diagnostics.background
-                and util.darken(diagnostics_warn_color, 0.1, c.bg0)
+        bg = cfg.diagnostics.background and util.darken(diagnostics_warn_color, 0.1, c.bg0)
             or c.none,
         fg = diagnostics_warn_color,
     },
     DiagnosticVirtualTextInfo = {
-        bg = cfg.diagnostics.background
-                and util.darken(diagnostics_info_color, 0.1, c.bg0)
+        bg = cfg.diagnostics.background and util.darken(diagnostics_info_color, 0.1, c.bg0)
             or c.none,
         fg = diagnostics_info_color,
     },
     DiagnosticVirtualTextHint = {
-        bg = cfg.diagnostics.background
-                and util.darken(diagnostics_hint_color, 0.1, c.bg0)
+        bg = cfg.diagnostics.background and util.darken(diagnostics_hint_color, 0.1, c.bg0)
             or c.none,
         fg = diagnostics_hint_color,
     },
@@ -273,14 +269,11 @@ hl.plugins.lsp.LspDiagnosticsDefaultInformation = hl.plugins.lsp.DiagnosticInfo
 hl.plugins.lsp.LspDiagnosticsDefaultWarning = hl.plugins.lsp.DiagnosticWarn
 hl.plugins.lsp.LspDiagnosticsUnderlineError = hl.plugins.lsp.DiagnosticUnderlineError
 hl.plugins.lsp.LspDiagnosticsUnderlineHint = hl.plugins.lsp.DiagnosticUnderlineHint
-hl.plugins.lsp.LspDiagnosticsUnderlineInformation =
-    hl.plugins.lsp.DiagnosticUnderlineInfo
+hl.plugins.lsp.LspDiagnosticsUnderlineInformation = hl.plugins.lsp.DiagnosticUnderlineInfo
 hl.plugins.lsp.LspDiagnosticsUnderlineWarning = hl.plugins.lsp.DiagnosticUnderlineWarn
 hl.plugins.lsp.LspDiagnosticsVirtualTextError = hl.plugins.lsp.DiagnosticVirtualTextError
-hl.plugins.lsp.LspDiagnosticsVirtualTextWarning =
-    hl.plugins.lsp.DiagnosticVirtualTextWarn
-hl.plugins.lsp.LspDiagnosticsVirtualTextInformation =
-    hl.plugins.lsp.DiagnosticVirtualTextInfo
+hl.plugins.lsp.LspDiagnosticsVirtualTextWarning = hl.plugins.lsp.DiagnosticVirtualTextWarn
+hl.plugins.lsp.LspDiagnosticsVirtualTextInformation = hl.plugins.lsp.DiagnosticVirtualTextInfo
 hl.plugins.lsp.LspDiagnosticsVirtualTextHint = hl.plugins.lsp.DiagnosticVirtualTextHint
 
 hl.plugins.ale = {
