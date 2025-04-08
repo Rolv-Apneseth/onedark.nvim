@@ -97,7 +97,7 @@ hl.common = {
     NormalFloat = { fg = c.fg, bg = cfg.transparent and c.none or c.bg1 },
     Pmenu = { fg = c.fg, bg = cfg.transparent and c.none or c.bg1 },
     PmenuSbar = { fg = c.none, bg = cfg.transparent and c.none or c.bg1 },
-    PmenuSel = { bg = c.bg0 },
+    PmenuSel = { bg = c.bg3 },
     PmenuExtra = { fg = c.light_grey },
     PmenuThumb = { fg = c.none, bg = c.grey },
     PmenuKind = { fg = c.purple },
